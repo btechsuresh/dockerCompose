@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [search-module]">
+  <parameter name="keyword" value="protractor"/>
+  <test name="search-test-java">
+    <parameter name="keyword" value="java"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest"/>
+    </classes>
+  </test> <!-- search-test-java -->
+  <test name="search-test-qa">
+    <parameter name="keyword" value="qa"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest"/>
+    </classes>
+  </test> <!-- search-test-qa -->
+  <test name="search-test-webdriver">
+    <parameter name="keyword" value="webdriver"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest"/>
+    </classes>
+  </test> <!-- search-test-webdriver -->
+  <test name="search-test-protractor">
+    <parameter name="keyword" value="protractor"/>
+    <classes>
+      <class name="com.searchmodule.tests.SearchTest"/>
+    </classes>
+  </test> <!-- search-test-protractor -->
+</suite> <!-- Failed suite [search-module] -->

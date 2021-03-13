@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="search-module">
+	<test name="search-test-java">
+		<parameter name="keyword" value="java"></parameter>
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="search-test-qa">
+		<parameter name="keyword" value="qa"></parameter>
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="search-test-webdriver">
+		<parameter name="keyword" value="webdriver"></parameter>
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="search-test-protractor">
+		<parameter name="keyword" value="protractor"></parameter>
+		<classes>
+			<class name="com.searchmodule.tests.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
