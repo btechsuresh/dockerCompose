@@ -6,9 +6,13 @@ pipeline {
     stages {
         stage('Build Jar') {            
             steps {
+			   dir("docker_compose"){
+			     bat 'mvn clean package -DskipTests'
+			   }
 			   
-                bat 'mvn clean package -DskipTests'
+                
             }
+			
         }
         stage('Build Image') {
             steps {               
