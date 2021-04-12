@@ -2,16 +2,16 @@
 <testng-results skipped="16" failed="4" total="20" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="book-flight-module" duration-ms="192618" started-at="2021-03-07T12:52:17Z" finished-at="2021-03-07T12:55:30Z">
+  <suite name="book-flight-module" duration-ms="10850" started-at="2021-04-10T11:02:42Z" finished-at="2021-04-10T11:02:53Z">
     <groups>
     </groups>
-    <test name="book-flight-1" duration-ms="192614" started-at="2021-03-07T12:52:17Z" finished-at="2021-03-07T12:55:30Z">
+    <test name="book-flight-1" duration-ms="7671" started-at="2021-04-10T11:02:42Z" finished-at="2021-04-10T11:02:50Z">
       <class name="com.newtours.tests.BookFlightTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb]" name="setupDriver" is-config="true" duration-ms="3874" started-at="2021-03-07T18:22:17Z" finished-at="2021-03-07T18:22:21Z">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247]" name="setupDriver" is-config="true" duration-ms="3542" started-at="2021-04-10T16:32:42Z" finished-at="2021-04-10T16:32:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb]" name="setupParameters" is-config="true" duration-ms="0" started-at="2021-03-07T18:22:21Z" depends-on-methods="tests.BaseTest.setupDriver" finished-at="2021-03-07T18:22:21Z">
+        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247]" name="setupParameters" is-config="true" duration-ms="2" started-at="2021-04-10T16:32:46Z" depends-on-methods="tests.BaseTest.setupDriver" finished-at="2021-04-10T16:32:46Z">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupParameters -->
-        <test-method status="FAIL" signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb]" name="registrationPage" duration-ms="188611" started-at="2021-03-07T18:22:21Z" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="FAIL" signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247]" name="registrationPage" duration-ms="3976" started-at="2021-04-10T16:32:46Z" finished-at="2021-04-10T16:32:50Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[cannot forward the request Failed to connect to /172.27.0.7:5555
-Command duration or timeout: 0 milliseconds]]>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac),platform=Linux 5.4.72-microsoft-standard-WSL2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1CLR98N', ip: '172.30.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591071 (0b695ff80972cc..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45521}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true, webdriver.remote.sessionid: f7aa25bdc1824eb6f9f255db64c...}
+Session ID: f7aa25bdc1824eb6f9f255db64c494c7
+*** Element info: {Using=name, value=firstName}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.27.0.7:5555
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac),platform=Linux 5.4.72-microsoft-standard-WSL2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1CLR98N', ip: '172.30.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591071 (0b695ff80972cc..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:45521}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true, webdriver.remote.sessionid: f7aa25bdc1824eb6f9f255db64c...}
+Session ID: f7aa25bdc1824eb6f9f255db64c494c7
+*** Element info: {Using=name, value=firstName}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -81,57 +97,19 @@ Command duration or timeout: 0 milliseconds
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.27.0.7:5555
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-33FO45G', ip: '192.168.112.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:143)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
-	at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPage -->
-        <test-method status="SKIP" signature="registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb]" name="registerationConfirmationPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247]" name="registerationConfirmationPage" duration-ms="0" started-at="2021-04-10T16:32:50Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" finished-at="2021-04-10T16:32:50Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -151,13 +129,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerationConfirmationPage -->
-        <test-method status="SKIP" signature="flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb]" name="flightDetailPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.registerationConfirmationPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247]" name="flightDetailPage" duration-ms="0" started-at="2021-04-10T16:32:50Z" depends-on-methods="com.newtours.tests.BookFlightTest.registerationConfirmationPage" finished-at="2021-04-10T16:32:50Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -177,13 +155,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightDetailPage -->
-        <test-method status="SKIP" signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb]" name="findFlightPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247]" name="findFlightPage" duration-ms="0" started-at="2021-04-10T16:32:50Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailPage" finished-at="2021-04-10T16:32:50Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -203,13 +181,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlightPage -->
-        <test-method status="SKIP" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb]" name="flightConfirmationPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247]" name="flightConfirmationPage" duration-ms="0" started-at="2021-04-10T16:32:50Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" finished-at="2021-04-10T16:32:50Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -229,127 +207,63 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightConfirmationPage -->
-        <test-method status="FAIL" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@3f0ee7cb]" name="quitDriver" is-config="true" duration-ms="0" started-at="2021-03-07T18:25:30Z" finished-at="2021-03-07T18:25:30Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Session [2bca56550f310e487d1841fca000db0d] was terminated due to FORWARDING_TO_NODE_FAILED
-Command duration or timeout: 0 milliseconds]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Session [2bca56550f310e487d1841fca000db0d] was terminated due to FORWARDING_TO_NODE_FAILED
-Command duration or timeout: 0 milliseconds
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
-	at tests.BaseTest.quitDriver(BaseTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
-	at org.testng.TestRunner.run(TestRunner.java:636)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: Session [2bca56550f310e487d1841fca000db0d] was terminated due to FORWARDING_TO_NODE_FAILED
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-33FO45G', ip: '192.168.112.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-	at org.openqa.grid.internal.ActiveTestSessions.getExistingSession(ActiveTestSessions.java:115)
-	at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession(DefaultGridRegistry.java:379)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.getSession(RequestHandler.java:241)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:123)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-	at org.openqa.grid.web.servlet.DriverServlet.doDelete(DriverServlet.java:75)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@75bd9247]" name="quitDriver" is-config="true" duration-ms="66" started-at="2021-04-10T16:32:50Z" finished-at="2021-04-10T16:32:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.newtours.tests.BookFlightTest -->
     </test> <!-- book-flight-1 -->
-    <test name="book-flight-2" duration-ms="192618" started-at="2021-03-07T12:52:17Z" finished-at="2021-03-07T12:55:30Z">
+    <test name="book-flight-4" duration-ms="10530" started-at="2021-04-10T11:02:42Z" finished-at="2021-04-10T11:02:53Z">
       <class name="com.newtours.tests.BookFlightTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7]" name="setupDriver" is-config="true" duration-ms="3755" started-at="2021-03-07T18:22:17Z" finished-at="2021-03-07T18:22:21Z">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353]" name="setupDriver" is-config="true" duration-ms="5890" started-at="2021-04-10T16:32:42Z" finished-at="2021-04-10T16:32:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7]" name="setupParameters" is-config="true" duration-ms="0" started-at="2021-03-07T18:22:21Z" depends-on-methods="tests.BaseTest.setupDriver" finished-at="2021-03-07T18:22:21Z">
+        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353]" name="setupParameters" is-config="true" duration-ms="0" started-at="2021-04-10T16:32:48Z" depends-on-methods="tests.BaseTest.setupDriver" finished-at="2021-04-10T16:32:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[2]]>
+                <![CDATA[4]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[$1169 USD]]>
+                <![CDATA[$2338 USD]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupParameters -->
-        <test-method status="FAIL" signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7]" name="registrationPage" duration-ms="188730" started-at="2021-03-07T18:22:21Z" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="FAIL" signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353]" name="registrationPage" duration-ms="4563" started-at="2021-04-10T16:32:48Z" finished-at="2021-04-10T16:32:53Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[cannot forward the request Failed to connect to /172.27.0.5:5555
-Command duration or timeout: 0 milliseconds]]>
+              <![CDATA[unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac),platform=Linux 5.4.72-microsoft-standard-WSL2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1CLR98N', ip: '172.30.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591071 (0b695ff80972cc..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:36835}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true, webdriver.remote.sessionid: 2c4cc67f045754fd89d0acb47f4...}
+Session ID: 2c4cc67f045754fd89d0acb47f493a1f
+*** Element info: {Using=name, value=firstName}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.27.0.5:5555
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from unknown error: cannot determine loading status
+from tab crashed
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac),platform=Linux 5.4.72-microsoft-standard-WSL2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1CLR98N', ip: '172.30.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591071 (0b695ff80972cc..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:36835}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true, webdriver.remote.sessionid: 2c4cc67f045754fd89d0acb47f4...}
+Session ID: 2c4cc67f045754fd89d0acb47f493a1f
+*** Element info: {Using=name, value=firstName}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -361,13 +275,12 @@ Command duration or timeout: 0 milliseconds
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
@@ -396,57 +309,19 @@ Command duration or timeout: 0 milliseconds
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.27.0.5:5555
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-33FO45G', ip: '192.168.112.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:143)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-	at org.openqa.grid.web.servlet.DriverServlet.doGet(DriverServlet.java:63)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
-	at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPage -->
-        <test-method status="SKIP" signature="registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7]" name="registerationConfirmationPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353]" name="registerationConfirmationPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -466,13 +341,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerationConfirmationPage -->
-        <test-method status="SKIP" signature="flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7]" name="flightDetailPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.registerationConfirmationPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353]" name="flightDetailPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.registerationConfirmationPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -492,13 +367,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightDetailPage -->
-        <test-method status="SKIP" signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7]" name="findFlightPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353]" name="findFlightPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -518,13 +393,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlightPage -->
-        <test-method status="SKIP" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7]" name="flightConfirmationPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353]" name="flightConfirmationPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -544,111 +419,59 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightConfirmationPage -->
-        <test-method status="FAIL" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@6a5fc7f7]" name="quitDriver" is-config="true" duration-ms="0" started-at="2021-03-07T18:25:30Z" finished-at="2021-03-07T18:25:30Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Session [9d3eebb07ba941aac195bcc5db0cb2b1] was terminated due to FORWARDING_TO_NODE_FAILED
-Command duration or timeout: 0 milliseconds]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Session [9d3eebb07ba941aac195bcc5db0cb2b1] was terminated due to FORWARDING_TO_NODE_FAILED
-Command duration or timeout: 0 milliseconds
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
-	at tests.BaseTest.quitDriver(BaseTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
-	at org.testng.TestRunner.run(TestRunner.java:636)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: Session [9d3eebb07ba941aac195bcc5db0cb2b1] was terminated due to FORWARDING_TO_NODE_FAILED
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-33FO45G', ip: '192.168.112.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-	at org.openqa.grid.internal.ActiveTestSessions.getExistingSession(ActiveTestSessions.java:115)
-	at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession(DefaultGridRegistry.java:379)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.getSession(RequestHandler.java:241)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:123)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-	at org.openqa.grid.web.servlet.DriverServlet.doDelete(DriverServlet.java:75)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@59a6e353]" name="quitDriver" is-config="true" duration-ms="50" started-at="2021-04-10T16:32:53Z" finished-at="2021-04-10T16:32:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.newtours.tests.BookFlightTest -->
-    </test> <!-- book-flight-2 -->
-    <test name="book-flight-4" duration-ms="192617" started-at="2021-03-07T12:52:17Z" finished-at="2021-03-07T12:55:30Z">
+    </test> <!-- book-flight-4 -->
+    <test name="book-flight-3" duration-ms="10544" started-at="2021-04-10T11:02:42Z" finished-at="2021-04-10T11:02:53Z">
       <class name="com.newtours.tests.BookFlightTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a]" name="setupDriver" is-config="true" duration-ms="4033" started-at="2021-03-07T18:22:17Z" finished-at="2021-03-07T18:22:21Z">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14]" name="setupDriver" is-config="true" duration-ms="6081" started-at="2021-04-10T16:32:42Z" finished-at="2021-04-10T16:32:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="FAIL" signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a]" name="registrationPage" duration-ms="188452" started-at="2021-03-07T18:22:21Z" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14]" name="setupParameters" is-config="true" duration-ms="1" started-at="2021-04-10T16:32:48Z" depends-on-methods="tests.BaseTest.setupDriver" finished-at="2021-04-10T16:32:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1753 USD]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupParameters -->
+        <test-method status="FAIL" signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14]" name="registrationPage" duration-ms="4328" started-at="2021-04-10T16:32:48Z" finished-at="2021-04-10T16:32:53Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[cannot forward the request Failed to connect to /172.27.0.6:5555
-Command duration or timeout: 0 milliseconds]]>
+              <![CDATA[unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac),platform=Linux 5.4.72-microsoft-standard-WSL2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1CLR98N', ip: '172.30.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591071 (0b695ff80972cc..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:40413}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true, webdriver.remote.sessionid: 00abe1ce6c23805e3853760e231...}
+Session ID: 00abe1ce6c23805e3853760e231a31ff]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.27.0.6:5555
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac),platform=Linux 5.4.72-microsoft-standard-WSL2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1CLR98N', ip: '172.30.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591071 (0b695ff80972cc..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:40413}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true, webdriver.remote.sessionid: 00abe1ce6c23805e3853760e231...}
+Session ID: 00abe1ce6c23805e3853760e231a31ff
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -683,73 +506,19 @@ Command duration or timeout: 0 milliseconds
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.27.0.6:5555
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-33FO45G', ip: '192.168.112.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:143)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
-	at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPage -->
-        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a]" name="setupParameters" is-config="true" duration-ms="0" started-at="2021-03-07T18:22:21Z" depends-on-methods="tests.BaseTest.setupDriver" finished-at="2021-03-07T18:22:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[$2338 USD]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupParameters -->
-        <test-method status="SKIP" signature="registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a]" name="registerationConfirmationPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14]" name="registerationConfirmationPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -769,13 +538,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerationConfirmationPage -->
-        <test-method status="SKIP" signature="flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a]" name="flightDetailPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.registerationConfirmationPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14]" name="flightDetailPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.registerationConfirmationPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -795,13 +564,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightDetailPage -->
-        <test-method status="SKIP" signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a]" name="findFlightPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14]" name="findFlightPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -821,13 +590,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlightPage -->
-        <test-method status="SKIP" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a]" name="flightConfirmationPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14]" name="flightConfirmationPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -847,127 +616,59 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightConfirmationPage -->
-        <test-method status="FAIL" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@3d24753a]" name="quitDriver" is-config="true" duration-ms="0" started-at="2021-03-07T18:25:30Z" finished-at="2021-03-07T18:25:30Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Session [32bd3fbc32008b9193a0ebf3fa1374d6] was terminated due to FORWARDING_TO_NODE_FAILED
-Command duration or timeout: 0 milliseconds]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Session [32bd3fbc32008b9193a0ebf3fa1374d6] was terminated due to FORWARDING_TO_NODE_FAILED
-Command duration or timeout: 0 milliseconds
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
-	at tests.BaseTest.quitDriver(BaseTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
-	at org.testng.TestRunner.run(TestRunner.java:636)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: Session [32bd3fbc32008b9193a0ebf3fa1374d6] was terminated due to FORWARDING_TO_NODE_FAILED
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-33FO45G', ip: '192.168.112.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-	at org.openqa.grid.internal.ActiveTestSessions.getExistingSession(ActiveTestSessions.java:115)
-	at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession(DefaultGridRegistry.java:379)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.getSession(RequestHandler.java:241)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:123)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-	at org.openqa.grid.web.servlet.DriverServlet.doDelete(DriverServlet.java:75)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@39ba5a14]" name="quitDriver" is-config="true" duration-ms="110" started-at="2021-04-10T16:32:53Z" finished-at="2021-04-10T16:32:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.newtours.tests.BookFlightTest -->
-    </test> <!-- book-flight-4 -->
-    <test name="book-flight-3" duration-ms="192617" started-at="2021-03-07T12:52:17Z" finished-at="2021-03-07T12:55:30Z">
+    </test> <!-- book-flight-3 -->
+    <test name="book-flight-2" duration-ms="10850" started-at="2021-04-10T11:02:42Z" finished-at="2021-04-10T11:02:53Z">
       <class name="com.newtours.tests.BookFlightTest">
-        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342]" name="setupDriver" is-config="true" duration-ms="2858" started-at="2021-03-07T18:22:17Z" finished-at="2021-03-07T18:22:20Z">
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec]" name="setupDriver" is-config="true" duration-ms="5665" started-at="2021-04-10T16:32:42Z" finished-at="2021-04-10T16:32:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342]" name="setupParameters" is-config="true" duration-ms="1" started-at="2021-03-07T18:22:20Z" depends-on-methods="tests.BaseTest.setupDriver" finished-at="2021-03-07T18:22:20Z">
+        <test-method status="PASS" signature="setupParameters(java.lang.String, java.lang.String)[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec]" name="setupParameters" is-config="true" duration-ms="0" started-at="2021-04-10T16:32:48Z" depends-on-methods="tests.BaseTest.setupDriver" finished-at="2021-04-10T16:32:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[$1753 USD]]>
+                <![CDATA[$1169 USD]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupParameters -->
-        <test-method status="FAIL" signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342]" name="registrationPage" duration-ms="189621" started-at="2021-03-07T18:22:20Z" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="FAIL" signature="registrationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec]" name="registrationPage" duration-ms="5107" started-at="2021-04-10T16:32:48Z" finished-at="2021-04-10T16:32:53Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[cannot forward the request Failed to connect to /172.27.0.3:5555
-Command duration or timeout: 0 milliseconds]]>
+              <![CDATA[unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac),platform=Linux 5.4.72-microsoft-standard-WSL2 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1CLR98N', ip: '172.30.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591071 (0b695ff80972cc..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46073}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true, webdriver.remote.sessionid: a4cf5d631b935b60e4ebf91546d...}
+Session ID: a4cf5d631b935b60e4ebf91546d2d86d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.27.0.3:5555
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: session deleted because of page crash
+from tab crashed
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac),platform=Linux 5.4.72-microsoft-standard-WSL2 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-1CLR98N', ip: '172.30.32.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591071 (0b695ff80972cc..., userDataDir: /tmp/.org.chromium.Chromium...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:46073}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true, webdriver.remote.sessionid: a4cf5d631b935b60e4ebf91546d...}
+Session ID: a4cf5d631b935b60e4ebf91546d2d86d
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -979,15 +680,9 @@ Command duration or timeout: 0 milliseconds
 	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-	at pages.RegistrationPage.enterUserDetails(RegistrationPage.java:48)
-	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:32)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at pages.RegistrationPage.goTo(RegistrationPage.java:41)
+	at com.newtours.tests.BookFlightTest.registrationPage(BookFlightTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1008,57 +703,19 @@ Command duration or timeout: 0 milliseconds
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: cannot forward the request Failed to connect to /172.27.0.3:5555
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-33FO45G', ip: '192.168.112.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:143)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
-	at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationPage -->
-        <test-method status="SKIP" signature="registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342]" name="registerationConfirmationPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec]" name="registerationConfirmationPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.registrationPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.registerationConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -1078,13 +735,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerationConfirmationPage -->
-        <test-method status="SKIP" signature="flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342]" name="flightDetailPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.registerationConfirmationPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec]" name="flightDetailPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.registerationConfirmationPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightDetailPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -1104,13 +761,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightDetailPage -->
-        <test-method status="SKIP" signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342]" name="findFlightPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec]" name="findFlightPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.flightDetailPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.findFlightPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -1130,13 +787,13 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findFlightPage -->
-        <test-method status="SKIP" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342]" name="flightConfirmationPage" duration-ms="0" started-at="2021-03-07T18:25:30Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" finished-at="2021-03-07T18:25:30Z">
+        <test-method status="SKIP" signature="flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec]" name="flightConfirmationPage" duration-ms="0" started-at="2021-04-10T16:32:53Z" depends-on-methods="com.newtours.tests.BookFlightTest.findFlightPage" finished-at="2021-04-10T16:32:53Z">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342] depends on not successfully finished methods]]>
+              <![CDATA[Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method BookFlightTest.flightConfirmationPage()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
@@ -1156,95 +813,11 @@ Driver info: driver.version: unknown
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flightConfirmationPage -->
-        <test-method status="FAIL" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@36d64342]" name="quitDriver" is-config="true" duration-ms="0" started-at="2021-03-07T18:25:30Z" finished-at="2021-03-07T18:25:30Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Session [e8480a7a64852f5e670c67acf84a2644] was terminated due to FORWARDING_TO_NODE_FAILED
-Command duration or timeout: 0 milliseconds]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Session [e8480a7a64852f5e670c67acf84a2644] was terminated due to FORWARDING_TO_NODE_FAILED
-Command duration or timeout: 0 milliseconds
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
-	at tests.BaseTest.quitDriver(BaseTest.java:45)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1012)
-	at org.testng.TestRunner.run(TestRunner.java:636)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.WebDriverException: Session [e8480a7a64852f5e670c67acf84a2644] was terminated due to FORWARDING_TO_NODE_FAILED
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-33FO45G', ip: '192.168.112.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: driver.version: unknown
-	at org.openqa.grid.internal.ActiveTestSessions.getExistingSession(ActiveTestSessions.java:115)
-	at org.openqa.grid.internal.DefaultGridRegistry.getExistingSession(DefaultGridRegistry.java:379)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.getSession(RequestHandler.java:241)
-	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:123)
-	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
-	at org.openqa.grid.web.servlet.DriverServlet.doDelete(DriverServlet.java:75)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:860)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
-	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
-	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
-	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
-	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.seleniumhq.jetty9.server.Server.handle(Server.java:530)
-	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:347)
-	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:256)
-	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
-	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:102)
-	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:247)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:140)
-	at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
-	at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:382)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:708)
-	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:626)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.newtours.tests.BookFlightTest@3b6eb2ec]" name="quitDriver" is-config="true" duration-ms="56" started-at="2021-04-10T16:32:53Z" finished-at="2021-04-10T16:32:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.newtours.tests.BookFlightTest -->
-    </test> <!-- book-flight-3 -->
+    </test> <!-- book-flight-2 -->
   </suite> <!-- book-flight-module -->
 </testng-results>

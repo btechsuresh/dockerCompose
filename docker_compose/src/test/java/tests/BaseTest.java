@@ -36,6 +36,8 @@ public class BaseTest {
 		}
 		String completeUrl="http://"+host+":4444/wd/hub";
 		this.driver=new RemoteWebDriver(new URL(completeUrl),dc);
+		System.out.println("URL is " +completeUrl);
+		System.out.println("Driver value " +driver);
 		
 		
 		/*WebDriverManager.chromedriver().setup();
