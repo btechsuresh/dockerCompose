@@ -28,7 +28,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId:'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]){
                  dir("docker_compose"){
-                   bat docker logout
+                   bat "docker logout"
                    bat "docker login --username=${user} --password=${pass}"
 				   bat "docker push selenium-docker:latest"
                  }
