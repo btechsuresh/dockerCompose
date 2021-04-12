@@ -30,8 +30,8 @@ pipeline {
                  dir("docker_compose"){
                    bat "docker logout"
                    bat "docker login --username=${user} --password=${pass}"
-				   bat "docker tag selenium-docker:latest selenium-docker:latest"
-				   bat "docker push selenium-docker:latest"
+				   bat "docker tag selenium-docker:latest selenium-docker"
+				   bat "docker push selenium-docker/latest"
                  }
                   
                 }
