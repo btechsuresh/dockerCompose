@@ -18,7 +18,7 @@ pipeline {
         stage('Build Image') {
             steps {
               dir("docker_compose"){
-                bat "docker build -t=selenium-docker ." 
+                bat "docker build -t=sureshh00007/selenium-docker ." 
               
               }               
                                
@@ -30,8 +30,8 @@ pipeline {
                  dir("docker_compose"){
                    bat "docker logout"
                    bat "docker login --username=${user} --password=${pass}"
-				   bat "docker tag selenium-docker:latest selenium-docker"
-				   bat "docker push selenium-docker:latest"
+				   bat "docker tag sureshh00007/selenium-docker:latest sureshh00007/selenium-docker"
+				   bat "docker push sureshh00007/selenium-docker:latest"
                  }
                   
                 }
